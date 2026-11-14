@@ -1,0 +1,6 @@
+{
+  "name": "Apex Airflow Mechanical - HVAC & Climate Solutions",
+  "description": "Premium residential and commercial HVAC services, 24/7 emergency dispatch, high-efficiency system installations, maintenance memberships, and online booking platform.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1070 @@
+# MASTER PROMPT: IMPLEMENT A COMPLETE, FULLY CONFIGURABLE HVAC WEBSITE ADMINISTRATION PLATFORM
+
+## PRIMARY DIRECTIVE
+
+Upgrade the existing HVAC website into a comprehensive, production-oriented, full-stack website and business management platform with a powerful, secure, and intuitive administration panel.
+
+This is an extension of an existing application. You must inspect and preserve the current project, its codebase, branding, routes, design system, components, integrations, and working features before making changes.
+
+Do not rebuild the application from scratch unless an existing architectural defect makes a specific component unusable. Reuse and improve the existing implementation wherever possible.
+
+The goal is to give an authorized administrator complete control over the public-facing website, its design, colors, content, navigation, services, functionality, integrations, business settings, and market-specific presentation without requiring source-code changes for routine modifications.
+
+Additionally, make the public website content universally relevant to prospective HVAC customers across different cities, states, regions, and countries.
+
+All requirements below are mandatory unless explicitly identified as requiring external configuration.
+
+# PART 1: FULL WEBSITE ADMINISTRATION
+
+## 1. Create a dedicated administration portal
+
+Implement a secure administrative application under a dedicated route such as `/admin`.
+
+Provide:
+
+- Secure login and logout.
+- Authentication and session handling.
+- Password recovery where supported.
+- Optional multifactor authentication if supported by the selected authentication provider.
+- Role-based permissions.
+- Dashboard overview.
+- Responsive administration layout.
+- Collapsible sidebar navigation.
+- Global search.
+- Notifications.
+- User profile and account settings.
+- Recent activity.
+- Unsaved changes warnings.
+- Confirmation dialogs for destructive operations.
+- Loading, empty, success, and error states.
+- Searchable, sortable, filterable, and paginated data tables.
+- Bulk operations where appropriate.
+- Draft and published states for content.
+- Preview before publishing.
+- Audit history for important administrative changes.
+
+The administration portal must have its own professional interface while remaining consistent with the brand's design system.
+
+Do not expose administrative functions through public-facing navigation.
+
+Protect all administrative routes, APIs, database operations, and files with server-side authorization.
+
+Hiding an administrative button in the browser is not sufficient security.
+
+## 2. Complete administration navigation
+
+Create the following administrative modules:
+
+1. Dashboard.
+2. Website Overview.
+3. Global Website Settings.
+4. Brand Identity.
+5. Theme and Colors.
+6. Typography.
+7. Layout and Components.
+8. Homepage Builder.
+9. Page Builder.
+10. Navigation Manager.
+11. Header and Footer Builder.
+12. Services Manager.
+13. Service Categories.
+14. Service Areas and Locations.
+15. Market and Regional Settings.
+16. Content Management System.
+17. Blog and Resources.
+18. FAQs.
+19. Customer Reviews.
+20. Project Portfolio.
+21. Team and Technician Profiles.
+22. Business Information.
+23. Contact Information.
+24. Business Hours.
+25. Emergency Service Settings.
+26. Promotions and Offers.
+27. Financing Information.
+28. Maintenance Plans.
+29. Warranties and Guarantees.
+30. Forms and Form Builder.
+31. Lead Management.
+32. Appointment Management.
+33. Customer Management.
+34. Equipment and Service History.
+35. Estimates and Quotes.
+36. Technician and Dispatch Management.
+37. Integrations.
+38. Analytics and Conversion Tracking.
+39. SEO Manager.
+40. Media Library.
+41. AI Assistant Settings.
+42. Notifications and Automation.
+43. User Management.
+44. Roles and Permissions.
+45. Security and Privacy Settings.
+46. Data Import and Export.
+47. Audit Logs.
+48. Backup and Recovery Configuration.
+49. Feature Flags.
+50. System Health and Integration Status.
+
+Each module must perform its intended operations. Do not create navigation items that lead to empty pages or decorative dashboards.
+
+For functionality that depends on an external service, implement its configuration interface and clearly indicate whether it is connected, awaiting credentials, or unavailable.
+
+# PART 2: COMPLETE VISUAL CONTROL
+
+## 3. Global theme editor
+
+Create a comprehensive visual theme management module.
+
+Administrators must be able to modify:
+
+### Colors
+
+- Primary color.
+- Secondary color.
+- Accent color.
+- Background color.
+- Surface and card colors.
+- Primary text color.
+- Secondary text color.
+- Border color.
+- Link color.
+- Button colors.
+- Button hover colors.
+- Focus indicator colors.
+- Success color.
+- Warning color.
+- Error color.
+- Informational color.
+- Header background.
+- Footer background.
+- Navigation background.
+- Mobile menu colors.
+- Form field colors.
+- Badge colors.
+- Card hover states.
+- Light and dark theme palettes where supported.
+
+Provide a visual color picker, hexadecimal and RGB input, live preview, preset palettes, reset controls, and contrast validation.
+
+Changes must update the website consistently through centralized design tokens or CSS variables.
+
+Do not hardcode the same color independently across dozens of components.
+
+### Typography
+
+Allow administrators to configure:
+
+- Heading font.
+- Body font.
+- Button font.
+- Navigation font.
+- Font weights.
+- Heading sizes.
+- Body sizes.
+- Line heights.
+- Letter spacing.
+- Text alignment.
+- Maximum text widths.
+- Responsive typography scaling.
+
+Use properly licensed fonts and provide safe fallback fonts.
+
+### Layout
+
+Allow configuration of:
+
+- Maximum content width.
+- Page gutters.
+- Section spacing.
+- Grid columns.
+- Card spacing.
+- Border radius.
+- Shadow intensity.
+- Button radius.
+- Container widths.
+- Header height.
+- Footer spacing.
+- Sidebar layout where relevant.
+- Responsive breakpoints where technically safe.
+
+### Buttons and interactive elements
+
+Allow configuration of:
+
+- Button labels.
+- Button variants.
+- Button sizes.
+- Primary and secondary action styles.
+- Corner radius.
+- Padding.
+- Icon visibility.
+- Hover effects.
+- Focus styles.
+- Disabled styles.
+
+### Global visual settings
+
+Include:
+
+- Logo.
+- Favicon.
+- Brand illustrations.
+- Hero images.
+- Background images.
+- Default service imagery.
+- Icon style.
+- Card style.
+- Animation preferences.
+- Reduced-motion behavior.
+- Light and dark appearance where supported.
+
+### Theme editor acceptance criteria
+
+Every saved theme change must appear on the public website after publication without a source-code edit.
+
+Provide draft, preview, publish, rollback, and reset-to-default capabilities.
+
+Validate theme changes before publication. Prevent configurations that render essential text unreadable or interactive controls inaccessible.
+
+# PART 3: PAGE AND COMPONENT BUILDERS
+
+## 4. Homepage builder
+
+Build an administrator-controlled homepage editor.
+
+Administrators must be able to add, remove, duplicate, reorder, hide, show, and edit supported homepage sections.
+
+Support configurable sections including:
+
+- Announcement bar.
+- Header.
+- Hero.
+- Main call to action.
+- Secondary call to action.
+- Service categories.
+- Featured services.
+- Why choose us.
+- Company introduction.
+- Customer reviews.
+- Trust indicators.
+- Credentials and certifications.
+- Service guarantees.
+- Financing.
+- Maintenance plans.
+- Promotions.
+- Featured projects.
+- Team members.
+- Process explanation.
+- FAQs.
+- Service areas.
+- Blog articles.
+- Contact form.
+- Estimate form.
+- Booking section.
+- Final call to action.
+- Footer.
+
+For each section, support applicable settings for:
+
+- Heading.
+- Subheading.
+- Description.
+- Images.
+- Background.
+- Alignment.
+- Width.
+- Spacing.
+- Number of columns.
+- Visible items.
+- Buttons and links.
+- Mobile presentation.
+- Publication status.
+- Display conditions.
+- SEO-related settings where relevant.
+
+Provide a live preview and responsive preview for desktop, tablet, and mobile.
+
+Support undo and redo within the editing session where practical.
+
+The homepage builder must edit actual website content and rendering, not merely update a separate mockup.
+
+## 5. General page builder
+
+Create reusable page templates and an administrator-controlled page editor.
+
+Allow authorized users to:
+
+- Create pages.
+- Edit page content.
+- Duplicate pages.
+- Reorder sections.
+- Add supported content blocks.
+- Remove blocks.
+- Save drafts.
+- Preview drafts.
+- Publish and unpublish.
+- Schedule publication where supported.
+- Set page slugs.
+- Configure redirects.
+- Set page titles and descriptions.
+- Configure canonical URLs.
+- Control indexing.
+- Assign templates.
+- Preview desktop and mobile layouts.
+- Archive obsolete pages.
+
+Support content blocks such as:
+
+- Rich text.
+- Headings.
+- Images.
+- Galleries.
+- Video embeds.
+- Buttons.
+- Service cards.
+- Review cards.
+- FAQs.
+- Tables.
+- Contact details.
+- Forms.
+- Statistics based on verified data.
+- Team profiles.
+- Project cards.
+- Map embeds.
+- Calls to action.
+
+Use a safe rich-text editor with sanitized output.
+
+Do not allow arbitrary executable scripts or unsafe HTML through normal content editing.
+
+## 6. Header, footer, and navigation manager
+
+Provide complete control over:
+
+- Logo and logo variants.
+- Main navigation.
+- Dropdown menus.
+- Mega menus.
+- Menu labels.
+- Menu order.
+- Menu visibility.
+- External and internal links.
+- Phone number.
+- Booking button.
+- Announcement bar.
+- Footer columns.
+- Social media links.
+- Contact details.
+- Legal links.
+- Copyright text.
+- Mobile navigation.
+- Sticky header behavior.
+- Header layout.
+- Footer layout.
+
+Validate links and provide warnings for broken destinations.
+
+Support drag-and-drop ordering where practical, with accessible alternative controls.
+
+## 7. Feature and functionality control
+
+Create a centralized feature management interface.
+
+Allow administrators to enable or disable supported public-facing modules, including:
+
+- Online booking.
+- Emergency service requests.
+- Estimate requests.
+- Customer accounts.
+- Maintenance plans.
+- Financing.
+- Promotions.
+- Blog.
+- Reviews.
+- Project portfolio.
+- Service-area directory.
+- AI chat assistant.
+- Newsletter signup.
+- Appointment reminders.
+- Payment functionality.
+- Customer document portal.
+- Commercial HVAC services.
+- Equipment comparison.
+- Filter reminders.
+
+When a feature is disabled:
+
+- Hide its public navigation links.
+- Remove or replace its calls to action.
+- Prevent new public submissions through that feature.
+- Preserve historical records where necessary.
+- Maintain valid internal links.
+- Show an appropriate fallback where needed.
+
+Feature flags must control real functionality, not just visual visibility.
+
+Do not allow a feature to be activated if its essential provider, credentials, business configuration, or security requirements are missing.
+
+# PART 4: UNIVERSAL HVAC CONTENT SYSTEM
+
+## 8. Replace location-dependent and company-specific assumptions
+
+Audit every existing public page, section, component, metadata field, template, and hardcoded text string.
+
+Identify and remove inappropriate dependencies on:
+
+- One specific city.
+- One specific state.
+- One specific country.
+- One ZIP code.
+- One currency.
+- One measurement system.
+- One phone number.
+- One address.
+- One set of business hours.
+- One set of legal terms.
+- One financing provider.
+- One service availability policy.
+- One local guarantee.
+- One set of customer reviews.
+- One set of certifications.
+- One fixed set of promotions.
+
+Replace these dependencies with configurable content, business settings, localization rules, or reusable templates.
+
+Do not remove essential local information from the website. Make it configurable and display it when relevant.
+
+The goal is a universal website foundation that can be adapted to a new HVAC business or market through administration.
+
+## 9. Universal content strategy
+
+Create generic but persuasive default content that resonates with residential and commercial HVAC customers across different locations.
+
+Use broadly applicable messaging about:
+
+- Indoor comfort.
+- Reliable heating and cooling.
+- System performance.
+- Preventive maintenance.
+- Equipment reliability.
+- Energy efficiency.
+- Indoor air quality.
+- Professional installation.
+- Troubleshooting and repair.
+- Transparent communication.
+- Customer service.
+- Home and business comfort.
+- Service planning.
+- Equipment lifespan.
+- Maintenance options.
+
+Use natural, professional language.
+
+Avoid overusing city names, exaggerated claims, artificial urgency, unsupported superlatives, and repetitive marketing phrases.
+
+Do not assume that every customer needs emergency service or a complete equipment replacement.
+
+Address customers who are researching a problem, comparing service providers, planning maintenance, considering a new system, or seeking a repair.
+
+### Example of universal homepage messaging
+
+Headline:
+
+"Reliable Heating and Cooling Solutions for Your Home or Business"
+
+Supporting copy:
+
+"Explore professional HVAC repair, installation, replacement, and maintenance services designed around your property, equipment, comfort needs, and budget."
+
+Primary action:
+
+"Request Service"
+
+Secondary action:
+
+"Explore Our Services"
+
+Alternative action:
+
+"Request an Estimate"
+
+This content must remain editable through the administration panel.
+
+### Content quality requirements
+
+Every public page must:
+
+- Communicate its purpose clearly.
+- Use relevant and readable headings.
+- Explain the service in practical terms.
+- Avoid unsupported technical claims.
+- Avoid fabricated statistics.
+- Avoid fake reviews.
+- Avoid unverified certifications.
+- Avoid unconfigured financing promises.
+- Avoid guarantees that have not been approved.
+- Include appropriate calls to action.
+- Use terminology suitable for the configured market.
+- Remain useful when the business operates in a different city or country.
+
+Use sensible defaults without publishing invented business details.
+
+# PART 5: MULTI-LOCATION AND MULTI-MARKET CONFIGURATION
+
+## 10. Business identity and market configuration
+
+Create a structured settings module for:
+
+- Business name.
+- Legal business name.
+- Brand name.
+- Country.
+- State, province, region, or equivalent.
+- Primary city.
+- Service areas.
+- ZIP codes or postal codes.
+- Physical business address.
+- Service-area business status.
+- Main phone number.
+- Local phone numbers.
+- Emergency contact number.
+- Email addresses.
+- Website domain.
+- Business hours.
+- Holidays.
+- Timezone.
+- Language.
+- Currency.
+- Measurement units.
+- Date format.
+- Time format.
+- Number formatting.
+- Tax configuration where applicable.
+- Regional legal pages.
+- Applicable certifications.
+- Financing providers.
+- Warranty terms.
+- Service availability.
+- Booking policies.
+- Cancellation policies.
+
+These settings must drive relevant public-facing content and workflows.
+
+Do not assume that the visitor's location determines which services, prices, guarantees, or legal terms apply.
+
+Use configured service-area and business data.
+
+## 11. Localization and regional content
+
+Design the application so that it can support different markets without rewriting the website.
+
+Include a localization architecture for:
+
+- Language strings.
+- Navigation labels.
+- Date and time formatting.
+- Currency formatting.
+- Measurement units.
+- Contact number formats.
+- Postal-code validation.
+- Regional terminology.
+- Legal content.
+- Service availability.
+- Local promotions.
+
+Support translation-ready content structures, even if only English is enabled initially.
+
+Use market-appropriate terminology. For example, terminology and service descriptions may differ between US and UK markets.
+
+Never automatically translate technical, contractual, or legal content and publish it without review.
+
+If multiple business locations are configured, allow content to be scoped to the entire business, a specific market, or a specific location.
+
+Use explicit fallback rules when location-specific content is absent.
+
+## 12. Location-specific content and SEO
+
+Create reusable location landing-page templates.
+
+Administrators should be able to create location pages with:
+
+- Location name.
+- Country and region.
+- Service coverage.
+- Relevant services.
+- Local contact details where applicable.
+- Business hours.
+- Real project examples.
+- Verified reviews.
+- Local FAQs.
+- SEO metadata.
+- Map configuration.
+- Booking availability.
+- Publication status.
+
+Generic content should be the default fallback, but location-specific information should override it when verified and configured.
+
+Do not fabricate local offices, testimonials, reviews, maps, service availability, or local credentials.
+
+Prevent thin, duplicated, and misleading location pages.
+
+# PART 6: COMPLETE CONTENT MANAGEMENT
+
+## 13. Services manager
+
+Allow administrators to create, edit, reorder, duplicate, archive, and publish services.
+
+Each service must support:
+
+- Name.
+- Slug.
+- Category.
+- Short and full descriptions.
+- Benefits.
+- Common symptoms.
+- Service process.
+- Equipment types.
+- Relevant options.
+- Pricing approach.
+- Warranty information.
+- Financing availability.
+- FAQs.
+- Images.
+- Videos.
+- Related services.
+- Related articles.
+- Reviews.
+- Project examples.
+- Service areas.
+- Booking eligibility.
+- Emergency eligibility.
+- SEO metadata.
+- Publication status.
+
+Changes must update the relevant public pages, navigation, cards, and related-service sections automatically.
+
+## 14. Content management modules
+
+Implement editable management screens for:
+
+- Blog articles.
+- FAQs.
+- Customer reviews.
+- Project portfolio.
+- Team members.
+- Technicians.
+- Certifications.
+- Promotions.
+- Financing information.
+- Membership plans.
+- Warranties.
+- Policies.
+- Contact information.
+- Service areas.
+- Homepage sections.
+- Navigation.
+- Footer.
+- Testimonials.
+- Trust indicators.
+- Media assets.
+
+Provide search, filtering, editing, previewing, publication, archival, and appropriate audit history.
+
+## 15. Global content search and replacement
+
+Create a safe administrative content search tool.
+
+Administrators must be able to find:
+
+- Hardcoded city names.
+- Old phone numbers.
+- Old addresses.
+- Outdated business names.
+- Expired promotions.
+- Outdated prices.
+- Deprecated service names.
+- Old links.
+- Outdated legal references.
+- Unsupported claims.
+
+Provide a preview of affected content before replacement.
+
+Require confirmation before applying bulk changes.
+
+Do not perform unrestricted replacement inside source code or database records without validation and rollback safeguards.
+
+Use this tool to help remove location-specific assumptions and keep the website consistent.
+
+# PART 7: BUSINESS FUNCTIONALITY
+
+## 16. Preserve and integrate existing features
+
+Audit all existing website functionality before making modifications.
+
+Preserve and improve applicable features, including:
+
+- Contact forms.
+- Booking requests.
+- Estimate requests.
+- Emergency service requests.
+- Service listings.
+- Customer reviews.
+- Financing information.
+- Maintenance plans.
+- Customer accounts.
+- Admin dashboards.
+- Blog content.
+- Service-area pages.
+- SEO features.
+- Analytics.
+- Existing integrations.
+
+Do not remove working functionality simply to simplify the project.
+
+Where the same capability exists in multiple places, create a shared component or service rather than introducing competing implementations.
+
+## 17. Form builder
+
+Create a configurable form management system.
+
+Allow authorized administrators to:
+
+- Create forms.
+- Edit field labels.
+- Add and remove fields.
+- Configure field types.
+- Set required fields.
+- Define validation rules.
+- Configure conditional fields.
+- Reorder fields.
+- Configure confirmation messages.
+- Configure internal notifications.
+- Assign submissions to a module.
+- Export authorized records.
+- Enable or disable forms.
+- Preview forms on desktop and mobile.
+
+Support text, email, phone, number, dropdown, checkbox, date, time, address, file upload, and textarea fields where appropriate.
+
+Validate all submissions on the server.
+
+Do not expose confidential submissions publicly.
+
+## 18. Lead and appointment management
+
+Maintain real persistent workflows for:
+
+- Contact enquiries.
+- Emergency service requests.
+- Routine service requests.
+- Appointment requests.
+- Estimate requests.
+- Commercial enquiries.
+- Maintenance enquiries.
+
+Administrators must be able to review, assign, update, search, filter, and export authorized records.
+
+Preserve historical records when a related public feature is disabled.
+
+Do not show a booking as confirmed unless the configured booking workflow has confirmed it.
+
+## 19. Integrations
+
+Create an integrations control center.
+
+Support configuration for relevant providers such as:
+
+- Firebase Authentication.
+- Cloud Firestore.
+- Email.
+- SMS.
+- CRM.
+- Scheduling.
+- Calendar.
+- Google Maps.
+- Google Analytics.
+- Google Tag Manager.
+- Payment processing.
+- Financing.
+- Review platforms.
+- Gemini AI.
+- Webhooks.
+
+Each integration must have a documented status, required settings, safe connection testing where supported, error reporting, and a disable option.
+
+Keep secrets in server-side environment configuration or an approved secrets manager.
+
+Never store private API keys in public website settings or send them to the browser.
+
+Do not display a green connected status until the connection has actually been verified.
+
+# PART 8: DATABASE, SECURITY, AND PUBLISHING
+
+## 20. Persistent data architecture
+
+Store editable website configuration and content in a persistent database.
+
+Use the existing database if one is already configured and suitable. If no persistent backend exists, use Firebase Authentication and Cloud Firestore where compatible with the current Google AI Studio project.
+
+Create appropriate data structures for:
+
+- Business settings.
+- Brand settings.
+- Theme tokens.
+- Page definitions.
+- Page sections.
+- Navigation.
+- Features.
+- Services.
+- Service categories.
+- Locations.
+- Market configuration.
+- Articles.
+- FAQs.
+- Reviews.
+- Projects.
+- Media.
+- Forms.
+- Form submissions.
+- Leads.
+- Appointments.
+- Users.
+- Roles.
+- Permissions.
+- Integrations.
+- Audit logs.
+- Publication versions.
+
+Use typed data models, schema validation, stable identifiers, timestamps, and explicit publication status.
+
+Do not rely on browser local storage as the authoritative database for a multi-user administrative platform.
+
+## 21. Draft, preview, publish, and rollback
+
+Implement a proper content publication workflow.
+
+Support:
+
+- Draft editing.
+- Live preview.
+- Publication.
+- Unpublishing.
+- Scheduled publication where supported.
+- Version history.
+- Change comparison where practical.
+- Restoration of a previous version.
+- Publication audit records.
+
+Ensure that public visitors see only the published version of content.
+
+Unsaved administrative changes must not unexpectedly modify the live website.
+
+Validate settings before publication.
+
+If a change fails validation, preserve the previous published version.
+
+## 22. Authentication and permissions
+
+Implement role-based access for:
+
+- Super administrator.
+- Business administrator.
+- Content editor.
+- Marketing manager.
+- Dispatcher.
+- Technician.
+- Read-only analyst.
+
+Permissions must be enforced in backend operations and database security rules.
+
+Allow the super administrator to manage user accounts, roles, and access.
+
+Prevent unauthorized privilege escalation.
+
+Do not create an unauthenticated public admin account or expose a shared default password.
+
+Provide a documented, secure process for establishing the first administrator.
+
+## 23. Audit logs and recovery
+
+Record important changes, including:
+
+- User login events where appropriate.
+- Configuration changes.
+- Theme publication.
+- Page publication.
+- Content deletion.
+- Permission changes.
+- Integration changes.
+- Sensitive data exports.
+- Bulk content replacement.
+
+Record the acting user, timestamp, affected record, and action.
+
+Do not include passwords, API secrets, or unnecessary sensitive data in logs.
+
+Implement recovery guidance and export capabilities.
+
+Do not claim that database backups are automated unless a real backup mechanism is configured and tested.
+
+# PART 9: USER EXPERIENCE AND ACCESSIBILITY
+
+## 24. Administration UX
+
+The administration panel must be easy for nontechnical business owners to use.
+
+Use:
+
+- Clear section names.
+- Helpful descriptions.
+- Sensible defaults.
+- Contextual tooltips.
+- Inline validation.
+- Preview controls.
+- Save indicators.
+- Confirmation dialogs.
+- Undo or rollback where appropriate.
+- Search and filtering.
+- Responsive layouts.
+- Accessible forms.
+- Clear warnings for destructive actions.
+
+Separate basic settings from advanced settings so the interface remains manageable despite its extensive functionality.
+
+Provide sensible default configurations for new websites.
+
+## 25. Public website UX
+
+Preserve a polished, customer-focused website.
+
+The public website must remain:
+
+- Responsive.
+- Accessible.
+- Fast.
+- SEO-friendly.
+- Consistent with the published theme.
+- Clear about available services.
+- Easy to navigate.
+- Easy to contact.
+- Easy to book.
+
+Target WCAG 2.2 AA principles.
+
+Validate color contrast when administrators modify themes.
+
+Do not let the visual editor introduce broken layouts, unreadable text, or inaccessible buttons.
+
+# PART 10: TESTING AND ACCEPTANCE
+
+## 26. Mandatory verification
+
+After implementing the administration platform, test:
+
+1. Administrator login.
+2. Unauthorized access rejection.
+3. User role enforcement.
+4. Theme color editing.
+5. Typography editing.
+6. Logo replacement.
+7. Homepage section editing.
+8. Page creation.
+9. Page publication.
+10. Page unpublishing.
+11. Navigation editing.
+12. Footer editing.
+13. Service creation and editing.
+14. Service archival.
+15. Location creation.
+16. Market configuration.
+17. Generic content fallback.
+18. Location-specific content overrides.
+19. Form configuration.
+20. Lead persistence.
+21. Appointment request persistence.
+22. Integration status handling.
+23. Draft preview.
+24. Publication rollback.
+25. Audit history.
+26. Mobile administration.
+27. Public website rendering after changes.
+28. Database authorization rules.
+29. SEO metadata updates.
+30. Broken-link and error-state handling.
+
+Test that a change made in the admin panel is reflected in the appropriate public page after publication.
+
+Test that a disabled feature cannot continue accepting new submissions through an unprotected API.
+
+Test that one user cannot access another user's protected data.
+
+## 27. Final implementation requirements
+
+Before declaring completion:
+
+- Inspect the existing project and its architecture.
+- Create an inventory of current functionality.
+- Implement the administration portal.
+- Connect settings to real public website behavior.
+- Remove inappropriate hardcoded location assumptions.
+- Create generic default content.
+- Preserve existing working features.
+- Add secure authentication and authorization.
+- Implement persistent configuration storage.
+- Add validation and publication controls.
+- Run available build and test commands.
+- Resolve major errors.
+- Verify the critical workflows.
+- Update documentation.
+
+Create a feature implementation register containing:
+
+- Feature name.
+- Implementation status.
+- Database dependency.
+- External integration dependency.
+- Test status.
+- Outstanding work.
+
+Use these statuses:
+
+- Implemented and verified.
+- Implemented but not fully tested.
+- Requires external configuration.
+- Requires business information.
+- Blocked by a platform limitation.
+- Not implemented.
+
+Never label a feature complete merely because its interface exists.
+
+## 28. Execution instructions
+
+Begin by inspecting the current codebase. Identify its framework, existing routes, shared components, database, authentication, styling, and existing business functionality.
+
+Then implement the administration platform incrementally while preserving the existing application.
+
+Prioritize the following:
+
+1. Secure admin foundation.
+2. Persistent global settings.
+3. Theme and branding editor.
+4. Homepage and page builder.
+5. Navigation and layout management.
+6. Universal content architecture.
+7. Service and location management.
+8. Forms and feature management.
+9. Publication, versioning, and rollback.
+10. Roles, permissions, and audit logs.
+11. Integration configuration.
+12. Automated testing and verification.
+
+Do not stop after creating an admin dashboard or a collection of attractive forms.
+
+Do not merely describe the implementation plan. Modify the actual application files and connect every implemented control to its real functionality.
+
+Where a capability requires an external service or missing business data, implement the available functionality, explain the remaining dependency, and provide the required configuration steps.
+
+Keep existing working functionality intact, avoid unnecessary rewrites, and continue until the complete feasible scope has been implemented and verified.
+
+Begin implementation now.

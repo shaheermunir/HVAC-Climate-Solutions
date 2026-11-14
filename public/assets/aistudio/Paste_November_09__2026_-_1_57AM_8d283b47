@@ -1,0 +1,1569 @@
+# MASTER BUILD PROMPT: PREMIUM HVAC BUSINESS WEBSITE AND LEAD GENERATION PLATFORM
+
+## 1. YOUR ROLE AND PRIMARY OBJECTIVE
+
+Act as a senior product architect, HVAC industry consultant, UI/UX designer, conversion rate optimization specialist, full-stack software engineer, database architect, SEO strategist, security engineer, and quality assurance engineer.
+
+Build a complete, premium, production-oriented HVAC business website and lead generation platform for a United States HVAC contractor.
+
+Use the strongest strategic patterns demonstrated by established HVAC and home-services businesses such as ARS/Rescue Rooter and One Hour Heating & Air Conditioning as functional benchmarks. These include comprehensive service categorization, a recognizable brand proposition, transparent service information, guarantees, financing, customer reviews, educational resources, online booking, emergency service pathways, and local service-area coverage.
+
+Do not copy their logos, proprietary visual assets, exact website copy, or distinctive copyrighted layouts. Create an original brand identity and original implementation that applies the underlying business and UX principles.
+
+This is not a static mockup, landing-page-only project, or front-end demonstration. Build a complete website with a working front end, backend, persistent data where configured, functional forms, navigation, administrative capabilities, and integration-ready architecture.
+
+### Mandatory delivery principles
+
+1. Implement every feature specified in this prompt.
+2. Do not omit complex features merely because they require multiple components or files.
+3. Do not replace a required working feature with a screenshot, illustration, disabled button, decorative dashboard, or nonfunctional form.
+4. Do not use placeholder links such as `href="#"` for actionable controls.
+5. Do not simulate successful bookings, payments, email delivery, CRM synchronization, or other external actions without actual execution.
+6. When credentials or external services are unavailable, build the complete integration interface, backend adapter, configuration screen, validation, error handling, and documented setup instructions. Clearly identify the feature as awaiting configuration.
+7. Use realistic sample data only in clearly identified development or demonstration mode. Never present fabricated reviews, credentials, customer counts, service guarantees, business addresses, prices, or completed integrations as verified facts.
+8. Prioritize reliable functionality, security, maintainability, accessibility, mobile usability, search visibility, and measurable lead generation.
+9. Use reusable components, shared design tokens, typed data models, clear service boundaries, and a consistent project structure.
+10. Build and verify the application incrementally. Resolve compilation errors, runtime errors, broken routes, failed forms, and major console errors before declaring completion.
+
+## 2. BUSINESS CONFIGURATION
+
+Create a configurable business website rather than hardcoding company-specific details throughout the codebase.
+
+Use the following initial configuration:
+
+- Business name: [HVAC BUSINESS NAME]
+- Tagline: [BRAND PROMISE]
+- Country: United States
+- Primary city: [CITY]
+- State: [STATE]
+- ZIP codes and service areas: [SERVICE AREAS]
+- Primary phone: [PHONE NUMBER]
+- Emergency phone: [EMERGENCY PHONE]
+- Business email: [EMAIL ADDRESS]
+- Physical address: [BUSINESS ADDRESS]
+- Business hours: [BUSINESS HOURS]
+- Emergency availability: [CONFIGURE ACTUAL AVAILABILITY]
+- Booking timezone: [BUSINESS TIMEZONE]
+- Currency: USD
+- Primary language: English
+- Business model: Residential HVAC services, with optional commercial HVAC services
+- Primary objective: Generate qualified phone calls, online bookings, installation estimates, and maintenance-plan subscriptions.
+- Secondary objective: Build local organic search visibility, establish trust, and increase repeat business.
+
+Store business information in a centralized configuration system and persistent database where appropriate.
+
+Create an administration interface for updating contact information, business hours, service coverage, service offerings, pricing information, financing details, warranties, promotions, and brand assets without modifying source code.
+
+Do not invent missing company information. Provide an initial setup wizard that collects required details before public launch.
+
+## 3. BRAND STRATEGY AND VISUAL DESIGN
+
+Create an original, premium HVAC brand with the credibility of an established regional contractor.
+
+### Visual direction
+
+- Modern, clean, professional, trustworthy, and conversion-focused.
+- Use a refined palette based on deep navy, white, and a restrained HVAC blue or warm accent.
+- Use strong typography, generous spacing, clear visual hierarchy, and high-quality real-world HVAC photography.
+- Use original brand assets and properly licensed or generated supporting images.
+- Feature real technicians, residential HVAC equipment, installation projects, diagnostic work, and satisfied customers when authentic assets are available.
+- Avoid generic stock-photo overload, excessive gradients, oversized decorative graphics, unnecessary animation, and cluttered layouts.
+- Create reusable buttons, cards, forms, accordions, navigation components, alerts, badges, and modal patterns.
+- Use consistent border radii, spacing, shadows, typography scales, and interaction states.
+- Include polished hover, focus, loading, success, error, and disabled states.
+- Use animation sparingly and respect reduced-motion preferences.
+- Build a responsive interface for mobile, tablet, laptop, and large desktop displays.
+
+### Header requirements
+
+Implement:
+
+- Configurable logo and company identity.
+- Primary navigation.
+- Services dropdown or mega menu.
+- Service-area navigation.
+- About and company information.
+- Reviews and testimonials.
+- Financing and maintenance-plan links where applicable.
+- Resources and blog.
+- Contact information.
+- Prominent phone call-to-action.
+- Online booking button.
+- Mobile navigation drawer.
+- Accessible keyboard navigation.
+- Sticky header behavior where appropriate.
+- Clear visual distinction between primary and secondary actions.
+
+On mobile, prioritize tap-to-call and booking without obscuring page content.
+
+### Homepage hero
+
+Create a high-converting hero section with:
+
+- A benefit-oriented headline specific to the configured service area.
+- Supporting copy that explains the main services and differentiator.
+- Primary action: Call Now.
+- Secondary action: Book HVAC Service.
+- Optional third action: Request an Estimate.
+- Genuine review rating and review count when connected to a verified source.
+- Trust indicators based on real company credentials and policies.
+- A relevant image or visual composition featuring residential HVAC work.
+- Clear messaging for emergency service only when the company actually offers it.
+
+The headline must communicate what the company does, who it serves, and why a customer should consider it.
+
+Do not use generic filler such as "Welcome to our website."
+
+### Brand positioning
+
+Support a configurable differentiator such as:
+
+- Reliable appointment windows.
+- Upfront estimates.
+- Qualified technicians.
+- Workmanship warranties.
+- Local expertise.
+- Maintenance plans.
+- Genuine emergency availability.
+
+Only publish claims supported by the actual business. Make any guarantee, service-level commitment, and its limitations configurable.
+
+## 4. COMPLETE WEBSITE INFORMATION ARCHITECTURE
+
+Build all of the following routes and their associated page templates.
+
+### Main public pages
+
+1. Homepage.
+2. About the company.
+3. Our team and technicians.
+4. Contact us.
+5. All services.
+6. Air conditioning services.
+7. Heating and furnace services.
+8. HVAC repair.
+9. HVAC installation.
+10. HVAC replacement.
+11. Preventive maintenance.
+12. Emergency HVAC service.
+13. Heat pump services.
+14. Thermostat installation and repair.
+15. Indoor air quality.
+16. Air filtration and purification.
+17. Ductwork installation and repair.
+18. Duct cleaning, if offered.
+19. Ventilation services.
+20. Smart thermostat services.
+21. Commercial HVAC, if offered.
+22. Residential HVAC.
+23. Financing options.
+24. Maintenance plans and membership.
+25. Service guarantees and warranties.
+26. Customer reviews.
+27. Project portfolio and case studies.
+28. Service-area directory.
+29. Individual city and service-area landing pages.
+30. Frequently asked questions.
+31. Blog and educational resources.
+32. Individual blog articles.
+33. Promotions and seasonal offers.
+34. Request an estimate.
+35. Book a service.
+36. Booking confirmation.
+37. Privacy policy.
+38. Terms of service.
+39. Cookie preferences and consent where required.
+40. Accessibility statement.
+41. Not-found page.
+42. Search results page where site search is enabled.
+
+Create a page registry or equivalent centralized route configuration.
+
+All page links must resolve correctly. Optional services must be configurable, and unpublished services must not appear in public navigation or search indexes.
+
+## 5. SERVICE CATALOG AND SERVICE DETAIL PAGES
+
+Build a reusable service management system.
+
+Each service record must support:
+
+- Service ID and slug.
+- Service name.
+- Category.
+- Short description.
+- Full description.
+- Benefits.
+- Problems addressed.
+- Symptoms that indicate the service may be needed.
+- Service process.
+- Available options.
+- Equipment types supported.
+- Relevant brands supported by the contractor.
+- Warranty information.
+- Pricing approach.
+- Financing availability.
+- Frequently asked questions.
+- Related services.
+- Relevant articles.
+- Customer reviews.
+- Project photographs.
+- Service-area availability.
+- Booking eligibility.
+- Emergency eligibility.
+- SEO title and meta description.
+- Structured data fields where applicable.
+- Publication status.
+
+Create service cards with consistent layouts, concise explanations, relevant imagery, and meaningful links.
+
+Every service detail page must include:
+
+1. Service-specific hero.
+2. Explanation of the service.
+3. Common symptoms or reasons to request it.
+4. Available service options.
+5. What the appointment involves.
+6. Factors affecting pricing.
+7. Warranty and financing information when applicable.
+8. Relevant reviews or case studies.
+9. Related services.
+10. Service-specific FAQs.
+11. Local service availability.
+12. A prominent call-to-action.
+13. A phone contact option.
+14. An estimate or booking form appropriate to the service.
+
+Avoid duplicate, automatically generated service copy. Content must be differentiated and accurate.
+
+## 6. COMPLETE HVAC CUSTOMER JOURNEYS
+
+Implement distinct conversion journeys for the following scenarios.
+
+### Journey A: Emergency repair
+
+A visitor needs urgent heating or cooling assistance.
+
+Required functionality:
+
+- Prominent call button.
+- Configurable emergency availability.
+- Emergency service request form.
+- ZIP code or service-area validation.
+- Problem category.
+- Equipment type.
+- Short problem description.
+- Customer contact information.
+- Property address.
+- Preferred contact method.
+- Optional photo upload with file validation.
+- Urgency classification.
+- Clear disclosure of the actual response policy.
+- Confirmation screen.
+- Lead creation in the database.
+- Administrative notification through a configured provider.
+- Lead source and campaign tracking.
+- Appropriate escalation to the responsible team.
+
+Never promise an immediate response or dispatch unless the business can actually provide it.
+
+### Journey B: Routine HVAC repair
+
+Required functionality:
+
+- Service selection.
+- Equipment selection.
+- Problem description.
+- Property information.
+- Customer details.
+- Preferred date and time.
+- Available appointment slots from a real scheduling source.
+- Booking confirmation.
+- Confirmation notification through a configured provider.
+- Appointment status tracking.
+- Cancellation or rescheduling rules.
+
+### Journey C: HVAC installation or replacement
+
+Required functionality:
+
+- New installation or replacement selection.
+- Residential or commercial property type.
+- Current equipment type.
+- Property size range.
+- Existing system age, if known.
+- Customer ZIP code.
+- Project objectives.
+- Optional equipment preferences.
+- Preferred contact time.
+- Estimate request.
+- Lead qualification.
+- CRM integration adapter.
+- Confirmation and follow-up workflow.
+
+Do not present an automated estimate as a binding quote unless the pricing model is explicitly configured and approved.
+
+### Journey D: Preventive maintenance
+
+Required functionality:
+
+- Maintenance service selection.
+- Equipment information.
+- Appointment scheduling.
+- Maintenance-plan interest.
+- Membership eligibility.
+- Renewal or recurring service preferences where supported.
+- Appointment reminders.
+- Maintenance history.
+- Service record association with the customer.
+
+### Journey E: Commercial HVAC enquiry
+
+Required functionality:
+
+- Company name.
+- Contact person.
+- Business email and telephone.
+- Site address.
+- Property type.
+- Approximate building size.
+- Equipment information.
+- Project requirements.
+- Service urgency.
+- Maintenance contract interest.
+- Estimate request.
+- Sales assignment and follow-up tracking.
+
+All forms must use proper validation, clear labels, helpful errors, spam prevention, server-side validation, duplicate submission protection, and accessible success messages.
+
+## 7. ONLINE BOOKING AND SCHEDULING ENGINE
+
+Implement a complete booking module, not a static booking interface.
+
+Required features:
+
+- Service selection.
+- Service-area validation.
+- Customer and property details.
+- Calendar and available appointment slots.
+- Business hours and holidays.
+- Configurable service duration.
+- Technician availability.
+- Technician service-area restrictions.
+- Appointment capacity.
+- Travel buffers where supported.
+- Timezone-aware scheduling.
+- Prevention of double booking.
+- Appointment confirmation.
+- Rescheduling and cancellation.
+- Booking reference number.
+- Status lifecycle.
+- Notification hooks.
+- Administrative appointment management.
+- Audit history.
+- Optional calendar integration.
+- Optional CRM synchronization.
+
+Suggested appointment states:
+
+- Requested.
+- Pending confirmation.
+- Confirmed.
+- Assigned.
+- In progress.
+- Completed.
+- Cancelled.
+- Rescheduled.
+- No-show.
+
+If a live scheduling provider is not configured, provide an honest appointment request workflow. Do not show invented availability as confirmed appointment slots.
+
+Use server-side checks and transactional or equivalent concurrency-safe logic to prevent duplicate bookings.
+
+## 8. FINANCING, PROMOTIONS, AND PRICING
+
+### Financing
+
+Create a financing information page with:
+
+- Explanation of available financing.
+- Configurable financing providers.
+- Available plans and terms only when verified.
+- Eligibility information.
+- Application links from the actual provider.
+- Clear disclaimers.
+- Contact options for questions.
+
+Never invent interest rates, APRs, payment amounts, approval times, or lender relationships.
+
+Do not collect sensitive financial information directly unless a compliant, secure implementation is explicitly required. Prefer the authorized financing provider's application flow.
+
+### Promotions
+
+Implement an administrative promotions manager supporting:
+
+- Promotion title.
+- Description.
+- Eligible services.
+- Discount type.
+- Discount amount.
+- Start and end dates.
+- Service-area restrictions.
+- Terms and exclusions.
+- Redemption instructions.
+- Coupon code where applicable.
+- Publication status.
+- Homepage placement.
+- Expiration behavior.
+
+Expired promotions must automatically stop appearing as active offers.
+
+Never invent a countdown, discount, limited-time offer, or scarcity claim.
+
+### Pricing
+
+Support:
+
+- Published service prices when the business approves them.
+- Price ranges with documented assumptions.
+- Diagnostic or service-call fees.
+- Estimate requests.
+- Installation consultation requests.
+- Financing links.
+- Explanation of factors affecting cost.
+
+Clearly distinguish an estimate, a price range, and a final approved quote.
+
+## 9. MAINTENANCE PLANS AND CUSTOMER MEMBERSHIPS
+
+Create a complete membership module.
+
+Features:
+
+- Configurable membership plans.
+- Plan benefits.
+- Included maintenance visits.
+- Service frequency.
+- Priority service terms.
+- Discount rules.
+- Eligibility.
+- Membership pricing.
+- Enrollment form.
+- Membership status.
+- Start and renewal dates.
+- Renewal reminders.
+- Cancellation requests.
+- Membership history.
+- Customer-to-membership association.
+- Administrative plan management.
+- Optional payment-provider integration.
+- Optional recurring billing.
+
+Recurring billing must not be enabled until a real payment provider, pricing configuration, cancellation policy, and applicable compliance requirements are in place.
+
+Do not claim a membership is active until the enrollment workflow has actually completed.
+
+## 10. REVIEWS, TESTIMONIALS, AND TRUST MANAGEMENT
+
+Create a trust and social-proof system with:
+
+- Customer review listing.
+- Review source.
+- Review date.
+- Rating.
+- Customer-approved display name.
+- Review text.
+- Associated service.
+- Optional associated project.
+- Moderation status.
+- Review submission form.
+- Administrative approval workflow.
+- External review links.
+- Review summary statistics when reliably available.
+
+Support integration with a real review provider where its API and permissions allow it.
+
+Do not scrape restricted review platforms or fabricate testimonials.
+
+Do not create fake review counts, ratings, star badges, customer names, or endorsements.
+
+Clearly distinguish imported verified reviews from customer-submitted website testimonials.
+
+If review data is unavailable, show a neutral review invitation or a configurable placeholder in development mode, not a fabricated public rating.
+
+## 11. GUARANTEES, WARRANTIES, AND SERVICE POLICIES
+
+Create configurable policy pages and content components.
+
+Support:
+
+- Workmanship warranty.
+- Manufacturer warranty information.
+- Satisfaction policy.
+- Appointment punctuality policy.
+- Service-call terms.
+- Emergency service policy.
+- Refund or cancellation policy where applicable.
+- Maintenance-plan terms.
+- Financing disclosures.
+
+Every policy must be editable by authorized administrators.
+
+Display applicable terms near the related claims and conversion actions.
+
+Do not copy another contractor's guarantee or imply that an independent business offers a national brand's policies.
+
+## 12. LOCAL SEO AND SERVICE-AREA MANAGEMENT
+
+Create a robust local search architecture.
+
+Required functionality:
+
+- Configurable business location.
+- Service-area directory.
+- City and ZIP code records.
+- Service availability by location.
+- Individual location landing pages.
+- Internal linking between locations and services.
+- Location-specific phone or contact details where appropriate.
+- Google Maps integration where configured.
+- Directions for a genuine physical business address.
+- Local business schema.
+- XML sitemap.
+- Robots.txt.
+- Canonical URLs.
+- Metadata management.
+- Open Graph metadata.
+- Breadcrumbs.
+- Semantic heading hierarchy.
+- Image alt text.
+- Redirect management.
+- Search console verification configuration.
+- Search performance monitoring integration where available.
+
+Each local landing page should support:
+
+- Localized introduction.
+- Actual services available in that area.
+- Accurate business contact information.
+- Local project examples where available.
+- Relevant customer reviews.
+- Service-specific FAQs.
+- Clear booking or call actions.
+- Accurate service coverage.
+
+Do not generate hundreds of thin location pages. Publish only useful pages with genuine geographic relevance.
+
+### Structured data
+
+Implement appropriate JSON-LD structured data where supported by the real business and page content, including:
+
+- HVACBusiness or the most appropriate LocalBusiness subtype.
+- Organization.
+- WebSite.
+- BreadcrumbList.
+- Service.
+- Article or BlogPosting.
+- Product or Offer only when appropriate.
+- Review or AggregateRating only when compliant with applicable search engine policies and supported by eligible source data.
+
+Validate structured data and avoid marking up unsupported or fabricated information.
+
+## 13. EDUCATIONAL RESOURCE CENTER AND BLOG
+
+Build a complete content management system for educational resources.
+
+Required content categories:
+
+- Air conditioning troubleshooting.
+- Heating and furnace troubleshooting.
+- HVAC maintenance.
+- Indoor air quality.
+- Energy efficiency.
+- Thermostats and smart controls.
+- Heat pumps.
+- HVAC replacement.
+- Installation planning.
+- HVAC costs and financing.
+- Seasonal maintenance.
+- Homeowner guides.
+- Commercial HVAC when applicable.
+
+Each article must support:
+
+- Title.
+- Slug.
+- Excerpt.
+- Article body.
+- Cover image.
+- Author.
+- Publication date.
+- Updated date.
+- Category.
+- Tags.
+- Related services.
+- Related articles.
+- SEO title.
+- Meta description.
+- Canonical URL.
+- Structured data.
+- Publication status.
+- Draft preview.
+- Scheduled publication where supported.
+
+Include:
+
+- Search and filtering.
+- Related article recommendations.
+- Table of contents for long articles.
+- Contextual service links.
+- Relevant calls to action.
+- Article pagination.
+- Social sharing links.
+- Optional newsletter subscription.
+
+Create several original sample articles for development, clearly distinguish them from approved company content, and do not publish unreviewed technical claims automatically.
+
+Safety-related HVAC guidance must not encourage unqualified visitors to work on electrical systems, refrigerant circuits, combustion equipment, or other hazardous components.
+
+## 14. PROJECT PORTFOLIO AND CASE STUDIES
+
+Create a project portfolio to demonstrate genuine installation and repair work.
+
+Each project record should support:
+
+- Project title.
+- Service category.
+- Location.
+- Project date.
+- Equipment type.
+- Customer-approved photographs.
+- Problem or project requirement.
+- Work completed.
+- Outcome.
+- Customer testimonial when authorized.
+- Relevant services.
+- Publication status.
+
+Support before-and-after image layouts where appropriate, galleries, captions, and related project links.
+
+Do not invent customer outcomes, savings, energy-efficiency percentages, or installation details.
+
+## 15. CONTACT, LEAD CAPTURE, AND CRM
+
+Build a unified lead management system.
+
+Every lead should support:
+
+- Unique lead ID.
+- Lead source.
+- Campaign attribution.
+- Service requested.
+- Customer details.
+- Property location.
+- Preferred contact method.
+- Lead creation time.
+- Lead owner.
+- Lead status.
+- Priority.
+- Notes.
+- Communication history.
+- Appointment association.
+- Estimate association.
+- Consent records where applicable.
+- Follow-up date.
+- Qualification details.
+
+Suggested lead statuses:
+
+- New.
+- Contacted.
+- Qualified.
+- Appointment requested.
+- Appointment confirmed.
+- Estimate pending.
+- Estimate sent.
+- Won.
+- Lost.
+- Closed.
+
+Create:
+
+- Lead list.
+- Lead detail view.
+- Search and filters.
+- Assignment.
+- Status updates.
+- Notes.
+- Follow-up reminders.
+- Lead history.
+- CSV export with appropriate permissions.
+- Duplicate detection.
+- CRM synchronization adapter.
+- Webhook support where appropriate.
+
+Implement actual persistence for leads and activities.
+
+Build integration adapters for CRM platforms such as HubSpot or other providers selected by the business. Do not assume credentials or claim that synchronization works until verified.
+
+Ensure failed integrations are logged safely, retryable where appropriate, and do not silently lose customer enquiries.
+
+## 16. CUSTOMER ACCOUNTS AND CUSTOMER PORTAL
+
+Create an optional secure customer portal.
+
+Features:
+
+- Sign-up and sign-in.
+- Password reset.
+- Email verification where supported.
+- Secure session management.
+- Customer profile.
+- Property management.
+- Service addresses.
+- Equipment inventory.
+- Booking history.
+- Upcoming appointments.
+- Appointment rescheduling and cancellation.
+- Estimate history.
+- Service history.
+- Maintenance-plan status.
+- Warranty information.
+- Customer communication preferences.
+- Account deletion request workflow.
+- Data export request workflow.
+
+Customers must only access their own records.
+
+Use Firebase Authentication or another appropriately configured authentication provider. Never store plaintext passwords or expose privileged database credentials.
+
+## 17. ADMINISTRATIVE CONTROL PANEL
+
+Build a protected administration interface with real backend functionality.
+
+### Dashboard
+
+Display metrics such as:
+
+- Total leads.
+- New leads.
+- Qualified leads.
+- Appointments requested.
+- Confirmed appointments.
+- Completed appointments.
+- Estimate requests.
+- Won and lost leads.
+- Lead conversion rate.
+- Revenue when actual transaction data exists.
+- Revenue by service when supported.
+- Traffic source and campaign performance when analytics data is available.
+- Recent activity.
+- Upcoming appointments.
+- Outstanding follow-ups.
+
+Support configurable date ranges and appropriate filtering.
+
+Do not invent revenue, traffic, conversion rates, or other business metrics. Clearly distinguish demonstration data from real records.
+
+### Administration modules
+
+Implement:
+
+1. Services management.
+2. Categories management.
+3. Locations and service areas.
+4. Leads and CRM.
+5. Appointments.
+6. Customers.
+7. Technicians.
+8. Technician availability.
+9. Equipment inventory.
+10. Estimates and quotes.
+11. Membership plans.
+12. Promotions.
+13. Reviews.
+14. Blog and content.
+15. Project portfolio.
+16. Financing configuration.
+17. Warranty and policy content.
+18. Business settings.
+19. Media library.
+20. Navigation management.
+21. SEO settings.
+22. Notification settings.
+23. Integration settings.
+24. Analytics and reports.
+25. User management.
+26. Audit logs.
+
+All modules must support appropriate create, read, update, and delete operations, with archival or soft deletion for records that need to be retained.
+
+### Role-based access control
+
+Support these roles:
+
+- Super administrator.
+- Business administrator.
+- Dispatcher.
+- Technician.
+- Sales representative.
+- Content editor.
+- Customer.
+
+Define permissions centrally and enforce them on the server and in database security rules, not merely by hiding interface elements.
+
+Technicians should only see assigned jobs and authorized customer details. Content editors should not be able to access private customer or financial records.
+
+## 18. TECHNICIAN AND DISPATCH MANAGEMENT
+
+Build an operational module that can be expanded into a field-service management system.
+
+Required features:
+
+- Technician profiles.
+- Skills and service categories.
+- Service-area assignments.
+- Working hours.
+- Availability.
+- Appointment assignments.
+- Daily schedule.
+- Job details.
+- Customer contact information based on permissions.
+- Job status updates.
+- Technician notes.
+- Work completion notes.
+- Service history.
+- Optional photo attachments.
+- Dispatch board.
+- Assignment conflict detection.
+- Administrative reassignment.
+
+Support a calendar or schedule view.
+
+Do not claim live GPS tracking or automated route optimization unless a real location and mapping integration has been implemented.
+
+## 19. ESTIMATES, QUOTES, AND JOB MANAGEMENT
+
+Build an estimate management module.
+
+Features:
+
+- Estimate number.
+- Customer and property.
+- Associated lead.
+- Associated appointment.
+- Service line items.
+- Equipment line items.
+- Quantities.
+- Unit prices.
+- Tax configuration.
+- Discounts.
+- Subtotal and total calculations.
+- Expiration date.
+- Terms.
+- Internal notes.
+- Customer-visible notes.
+- Draft, sent, accepted, rejected, and expired statuses.
+- Revision history.
+- PDF generation where supported.
+- Customer approval workflow.
+- Optional electronic signature integration.
+- Job conversion after acceptance.
+
+Use decimal-safe currency calculations.
+
+Never expose internal cost or margin information to customers.
+
+Do not treat an estimate as a confirmed contract unless the required approval workflow has completed.
+
+## 20. EQUIPMENT AND SERVICE HISTORY
+
+Support equipment records for customer properties.
+
+Fields should include:
+
+- Equipment ID.
+- Customer.
+- Property.
+- Equipment category.
+- Manufacturer.
+- Model.
+- Serial number where needed.
+- Installation date.
+- Warranty dates.
+- Maintenance history.
+- Service history.
+- Filter specifications where known.
+- Notes.
+- Related documents.
+
+Allow authorized staff to associate service visits and maintenance records with equipment.
+
+Protect serial numbers, addresses, and customer information from unauthorized access.
+
+## 21. NOTIFICATIONS AND AUTOMATION
+
+Create a notification service with configurable adapters.
+
+Support:
+
+- New lead notification.
+- Booking request notification.
+- Appointment confirmation.
+- Appointment reminder.
+- Rescheduling notification.
+- Cancellation notification.
+- Estimate sent.
+- Estimate follow-up.
+- Maintenance reminder.
+- Membership renewal reminder.
+- Internal lead assignment notification.
+- Integration failure alert.
+
+Provide configurable email templates and, when supported, SMS templates.
+
+Use actual email and SMS providers through server-side integrations.
+
+Support background jobs or scheduled tasks where the runtime and deployment environment permit them.
+
+Include:
+
+- Retry policies.
+- Delivery status.
+- Error handling.
+- Idempotency.
+- Notification preferences.
+- Consent and opt-out handling where required.
+- Safe logging without sensitive message content.
+
+Do not claim an email or SMS was sent merely because a user clicked a button.
+
+## 22. ANALYTICS AND CONVERSION OPTIMIZATION
+
+Implement privacy-conscious conversion tracking.
+
+Track appropriate events such as:
+
+- Page view.
+- Service page view.
+- Phone CTA click.
+- Booking CTA click.
+- Booking form started.
+- Booking form submitted.
+- Booking confirmed.
+- Estimate form submitted.
+- Emergency request submitted.
+- Financing link clicked.
+- Membership enquiry.
+- Contact form submitted.
+
+Capture available UTM parameters and relevant referral data.
+
+Create integration points for Google Analytics 4, Google Tag Manager, and approved call-tracking providers.
+
+Requirements:
+
+- Consent-aware analytics where required.
+- No personal information sent as analytics event parameters.
+- No sensitive customer details in URLs.
+- Clear separation between browser events and server-confirmed conversions.
+- Server-side validation of business events.
+- Deduplication where browser and server events overlap.
+- Accurate conversion reporting.
+
+Create an administrative report showing real leads and confirmed bookings alongside available traffic-source data.
+
+Do not fabricate analytics data or display empty integrations as connected.
+
+## 23. AI-POWERED HVAC WEBSITE ASSISTANT
+
+Implement an optional AI assistant using a supported Gemini model through a secure server-side integration.
+
+The assistant should help visitors:
+
+- Find relevant HVAC services.
+- Understand service categories.
+- Find service areas.
+- Answer approved FAQs.
+- Understand maintenance options.
+- Navigate to booking or estimate forms.
+- Explain the information needed to request service.
+- Identify appropriate next steps for common nonhazardous HVAC questions.
+
+Requirements:
+
+- Server-side API calls.
+- Secrets stored in environment configuration.
+- Configurable model settings.
+- Rate limiting.
+- Input validation.
+- Abuse prevention.
+- Error handling.
+- Conversation history controls.
+- Clear indication that responses are AI-generated.
+- Escalation to a human representative.
+- Links to authoritative company pages.
+- No invented service availability, prices, guarantees, or appointments.
+
+The assistant must not diagnose dangerous faults with certainty, provide unsafe instructions for electrical or refrigerant work, or claim to replace a qualified technician.
+
+It must not create confirmed bookings without invoking the real booking service and obtaining the required confirmation.
+
+If the Gemini integration is unavailable, the rest of the website must continue to function normally.
+
+## 24. OPTIONAL ADVANCED CUSTOMER TOOLS
+
+Implement the following tools as independent modules where feasible.
+
+### HVAC replacement planning questionnaire
+
+Collect property type, approximate size, current system, comfort concerns, and replacement objectives. Provide a nonbinding planning summary, not an engineered load calculation or guaranteed quote.
+
+### Maintenance reminder preferences
+
+Allow customers to opt in to reminders based on service history and configurable intervals.
+
+### Indoor comfort questionnaire
+
+Collect comfort concerns such as uneven temperatures, humidity, or airflow and suggest relevant service categories without claiming a definitive diagnosis.
+
+### Service comparison tool
+
+Compare configured service plans, maintenance benefits, or equipment options using verified business data.
+
+### Filter reminder tool
+
+Allow customers to record their equipment and filter replacement preferences. Avoid recommending a filter specification unless it is supported by verified equipment information.
+
+### Customer document center
+
+Allow authorized customers and staff to access relevant estimates, invoices, warranties, and service documents, with strict access controls.
+
+All optional tools must use real business configuration and clearly communicate their limitations.
+
+## 25. DATABASE AND TECHNICAL ARCHITECTURE
+
+Use a maintainable full-stack architecture supported by Google AI Studio Build mode.
+
+Preferred starting architecture:
+
+- Front end: React and TypeScript.
+- Styling: a consistent design system using Tailwind CSS or another compatible styling solution.
+- UI components: accessible, reusable components.
+- Server: Node.js with TypeScript where supported.
+- Database: Firebase Firestore or another appropriately configured persistent database.
+- Authentication: Firebase Authentication or an equivalent secure provider.
+- Validation: shared schemas with server-side validation.
+- API: clearly structured server routes or service handlers.
+- AI: Gemini accessed securely from the server.
+- Media: configured cloud storage with access controls.
+- Deployment: Google Cloud Run or another supported production host.
+- Source control: GitHub integration where available.
+
+Do not add unnecessary dependencies.
+
+Organize the code into clear modules, for example:
+
+- `components`
+- `pages`
+- `layouts`
+- `features`
+- `services`
+- `api`
+- `hooks`
+- `schemas`
+- `types`
+- `config`
+- `utils`
+- `tests`
+
+Use the framework's supported routing conventions.
+
+Implement:
+
+- Centralized configuration.
+- Typed models.
+- Reusable API clients.
+- Server-side business logic.
+- Shared validation.
+- Consistent error responses.
+- Loading and empty states.
+- Logging.
+- Pagination.
+- Search and filtering.
+- Data access abstraction where useful.
+- Database indexes where required.
+- Secure environment variables.
+- Schema or data migration procedures appropriate to the selected database.
+
+Never expose service account credentials, private API keys, privileged database access, or secrets in client-side bundles.
+
+## 26. DATA MODEL
+
+Create persistent data models or collections for at least:
+
+- BusinessSettings.
+- Users.
+- Roles and Permissions.
+- Customers.
+- Properties.
+- Equipment.
+- ServiceCategories.
+- Services.
+- ServiceAreas.
+- Leads.
+- LeadActivities.
+- Appointments.
+- Technicians.
+- TechnicianAvailability.
+- Estimates.
+- EstimateLineItems.
+- Jobs.
+- JobActivities.
+- MembershipPlans.
+- MembershipSubscriptions.
+- Promotions.
+- Reviews.
+- Articles.
+- ArticleCategories.
+- Projects.
+- UploadedMedia.
+- NotificationTemplates.
+- NotificationEvents.
+- IntegrationConfigurations.
+- AuditLogs.
+- ConsentRecords.
+- AnalyticsEvents where appropriate.
+
+Define relationships, required fields, validation rules, indexes, retention requirements, and access permissions.
+
+Use stable IDs, timestamps, explicit status values, and auditable updates.
+
+Use server timestamps for important events.
+
+Avoid storing the same authoritative information independently in multiple places.
+
+## 27. SECURITY AND PRIVACY
+
+Treat security as a mandatory implementation requirement.
+
+Implement:
+
+- Authentication for protected areas.
+- Server-side authorization.
+- Role-based access control.
+- Firestore security rules or equivalent database policies.
+- Input validation.
+- Output encoding.
+- Protection against common injection attacks.
+- Rate limiting.
+- Spam protection.
+- Secure file uploads.
+- File size and content-type restrictions.
+- Safe error messages.
+- Secure session handling.
+- Protection against unauthorized record access.
+- Secrets management.
+- Audit logging for sensitive administrative actions.
+- Appropriate data retention and deletion workflows.
+- Consent management where required.
+- Secure webhook validation.
+- Payment-provider hosted flows where applicable.
+
+Do not store payment card details.
+
+Do not log passwords, API keys, authentication tokens, or unnecessary sensitive customer data.
+
+Do not expose customer records through public database queries.
+
+Create a deployment checklist for HTTPS, production secrets, access policies, backups, monitoring, and incident response.
+
+## 28. ACCESSIBILITY AND PERFORMANCE
+
+Target WCAG 2.2 AA accessibility principles.
+
+Implement:
+
+- Semantic HTML.
+- Keyboard-accessible navigation.
+- Visible focus indicators.
+- Accessible form labels.
+- Descriptive error messages.
+- Sufficient color contrast.
+- Screen-reader-friendly controls.
+- Accessible modal behavior.
+- Appropriate heading hierarchy.
+- Alt text for meaningful images.
+- Reduced-motion support.
+- Responsive layouts.
+- Accessible date and time selection.
+
+Performance requirements:
+
+- Optimize image sizes and formats.
+- Lazy-load below-the-fold media.
+- Reserve image dimensions to reduce layout shifts.
+- Minimize unnecessary JavaScript.
+- Avoid duplicate dependencies.
+- Use caching appropriately.
+- Minimize blocking resources.
+- Optimize fonts.
+- Prevent layout shifts.
+- Use pagination for large datasets.
+- Monitor Core Web Vitals.
+
+Aim for Lighthouse scores of at least 90 in Performance, Accessibility, Best Practices, and SEO where practical. Treat these as test targets, not guaranteed scores.
+
+## 29. SEO AND CONTENT QUALITY
+
+Every public page must have:
+
+- A unique page title.
+- A relevant meta description.
+- One clear primary heading.
+- Semantic heading hierarchy.
+- Descriptive URLs.
+- Relevant internal links.
+- Image alt text.
+- Canonical URL configuration.
+- Social sharing metadata where applicable.
+
+Implement:
+
+- XML sitemap generation.
+- Robots.txt.
+- Breadcrumbs.
+- Structured data.
+- Redirect management.
+- Search indexing controls.
+- Search engine verification settings.
+- Useful 404 behavior.
+- Clean pagination where needed.
+
+Do not index private customer portals, admin routes, internal search results, or pages containing confidential information.
+
+Avoid keyword stuffing, doorway pages, misleading location claims, duplicate service content, and fabricated review markup.
+
+## 30. INTEGRATION ARCHITECTURE
+
+Create a centralized integration settings page and provider abstraction layer.
+
+Support configuration for:
+
+- Gemini API.
+- Firebase Authentication.
+- Firestore.
+- Cloud Storage.
+- Google Analytics 4.
+- Google Tag Manager.
+- Google Maps or an appropriate mapping provider.
+- Google Calendar where appropriate.
+- Email provider.
+- SMS provider.
+- CRM provider.
+- Scheduling provider.
+- Payment provider.
+- Financing provider.
+- Review provider.
+- Call-tracking provider.
+- Webhook destinations.
+
+For each integration, display:
+
+- Provider.
+- Connection status.
+- Required configuration fields.
+- Last successful synchronization.
+- Last error.
+- Available capabilities.
+- Test connection action where supported.
+- Disconnect or disable action where safe.
+
+Store secrets securely on the server.
+
+Do not claim a provider is connected unless a real connection test or successful operation verifies it.
+
+Do not expose secret values in administrative page responses.
+
+## 31. ADMINISTRATIVE CONTENT MANAGEMENT
+
+Allow authorized staff to edit public website content without developer involvement.
+
+Support editing:
+
+- Homepage hero.
+- Main headlines.
+- Supporting copy.
+- Service descriptions.
+- Service ordering.
+- Navigation.
+- Contact details.
+- Business hours.
+- Service areas.
+- Team profiles.
+- Reviews.
+- Projects.
+- FAQs.
+- Promotions.
+- Blog articles.
+- Financing information.
+- Guarantees.
+- Footer content.
+- SEO metadata.
+- Images and media.
+- Calls to action.
+
+Include draft, preview, publish, unpublish, and archive workflows where appropriate.
+
+Protect published content from accidental deletion.
+
+Use safe defaults when optional content is absent.
+
+## 32. REQUIRED USER INTERFACE STATES
+
+Every significant interface must handle:
+
+- Initial loading.
+- Successful data retrieval.
+- Empty data.
+- Validation errors.
+- Server errors.
+- Network failure.
+- Unauthorized access.
+- Expired sessions.
+- Duplicate submissions.
+- Pending external integrations.
+- Successful completion.
+- Cancellation.
+- Retry.
+
+Do not leave users facing blank screens or unexplained failures.
+
+Provide clear messages and appropriate next actions.
+
+## 33. TESTING AND QUALITY ASSURANCE
+
+Create automated tests appropriate to the selected stack.
+
+### Unit tests
+
+Test:
+
+- Input validation.
+- Currency calculations.
+- Appointment eligibility.
+- Booking conflict detection.
+- Lead status transitions.
+- Permission checks.
+- Service-area validation.
+- Promotion expiry.
+- SEO metadata generation.
+
+### Integration tests
+
+Test:
+
+- Form submission and persistence.
+- Authentication.
+- Authorization.
+- Booking creation.
+- Appointment updates.
+- Estimate creation.
+- Customer record access.
+- Notification adapter behavior.
+- CRM synchronization failure handling.
+- API error responses.
+
+### End-to-end tests
+
+Test at least:
+
+1. Homepage navigation.
+2. Service discovery.
+3. Emergency request submission.
+4. Routine booking request.
+5. Estimate request.
+6. Contact form.
+7. Customer sign-in.
+8. Appointment rescheduling.
+9. Admin lead management.
+10. Admin service editing.
+11. Unauthorized access rejection.
+12. Mobile navigation.
+13. Error and empty states.
+
+Use development fixtures for tests. Never use real customer information in test data.
+
+### Acceptance criteria
+
+- The application builds without compilation errors.
+- Public routes render correctly.
+- Navigation links work.
+- Forms validate on both client and server.
+- Submitted records persist in the configured database.
+- Protected records cannot be accessed by unauthorized users.
+- Booking conflicts are prevented.
+- Administrative changes appear in the appropriate public interfaces.
+- External integrations report their actual status.
+- The interface works on mobile and desktop.
+- There are no critical accessibility or security defects left unaddressed.
+- All mandatory features are implemented or explicitly documented as blocked by external configuration.
+- Automated tests cover critical business logic and conversion journeys.
+
+## 34. IMPLEMENTATION PRIORITIES
+
+Do not sacrifice functionality for a polished homepage.
+
+Build in the following order while preserving the complete scope.
+
+### Phase 1: Foundation
+
+- Project structure.
+- Design system.
+- Routing.
+- Business configuration.
+- Database.
+- Authentication.
+- Authorization.
+- Shared validation.
+- Error handling.
+
+### Phase 2: Public website
+
+- Homepage.
+- Header and footer.
+- Service catalog.
+- Service detail pages.
+- About.
+- Contact.
+- Service areas.
+- Reviews.
+- Financing.
+- Maintenance plans.
+- Resources.
+- Legal pages.
+
+### Phase 3: Lead conversion
+
+- Emergency request.
+- Contact forms.
+- Estimate requests.
+- Booking workflow.
+- Appointment management.
+- Lead persistence.
+- Confirmation states.
+- Notifications.
+
+### Phase 4: Administration
+
+- Admin dashboard.
+- Services CMS.
+- Content CMS.
+- Leads.
+- Customers.
+- Technicians.
+- Appointments.
+- Estimates.
+- Promotions.
+- Reviews.
+- Service areas.
+- Business settings.
+
+### Phase 5: Advanced business platform
+
+- Customer portal.
+- Equipment history.
+- Memberships.
+- CRM adapters.
+- Analytics.
+- Calendar integration.
+- Notification automation.
+- AI assistant.
+- Optional payment and financing integrations.
+
+### Phase 6: Verification and deployment
+
+- Automated tests.
+- Security review.
+- Accessibility review.
+- SEO validation.
+- Performance review.
+- Responsive testing.
+- Production configuration.
+- Deployment documentation.
+
+All phases are part of the required project scope. Phasing is an implementation strategy, not permission to permanently omit functionality.
+
+If context, time, or build constraints prevent completion in a single iteration, maintain a feature implementation register and continue in subsequent iterations. Do not discard existing functionality or rewrite stable modules unnecessarily.
+
+## 35. FINAL DELIVERY REQUIREMENTS
+
+Deliver the actual working application and its source code.
+
+Include:
+
+1. Complete project structure.
+2. Functional public website.
+3. Persistent backend and database configuration.
+4. Secure authentication and permissions.
+5. Admin dashboard.
+6. Lead and booking workflows.
+7. Service and content management.
+8. Responsive layouts.
+9. SEO foundations.
+10. Automated tests.
+11. Environment variable example file without real secrets.
+12. Database setup instructions.
+13. Integration setup guide.
+14. Deployment guide.
+15. Backup and recovery recommendations.
+16. Security checklist.
+17. Feature inventory.
+18. Known limitations and blocked integrations.
+19. Test results.
+20. Production launch checklist.
+
+Create a `README.md` with clear setup, development, testing, integration, and deployment instructions.
+
+Create a feature implementation register with these statuses:
+
+- Implemented and tested.
+- Implemented but not fully tested.
+- Requires external credentials.
+- Requires business information.
+- Blocked by a platform limitation.
+- Not implemented.
+
+Never mark an item complete without supporting implementation or verification.
+
+## 36. EXECUTION INSTRUCTIONS
+
+Begin by examining the current project and identifying its existing framework, dependencies, files, routes, and configuration.
+
+If this is a new project, establish the architecture described above.
+
+Then:
+
+1. Define the application structure and reusable design system.
+2. Implement the complete public website shell.
+3. Implement all major page templates.
+4. Implement the data model and persistence.
+5. Implement the lead and booking workflows.
+6. Implement the administration panel.
+7. Implement security and permissions.
+8. Add integrations through server-side adapters.
+9. Add tests.
+10. Run the available build and test commands.
+11. Inspect and correct the rendered UI.
+12. Verify critical interactions.
+13. Update the feature implementation register.
+14. Document remaining external setup requirements.
+
+Do not respond with a tutorial, a proposed architecture only, or a description of code you intend to write. Write and modify the actual project files.
+
+Do not stop after creating the homepage.
+
+Do not ask me to manually implement components that you can implement in the project.
+
+Where information is missing, use a clearly marked configurable value and continue development. Do not fabricate company facts.
+
+Start building now. First establish a robust full-stack foundation, then implement the public website, persistent lead and booking workflows, and administration interface. Continue until all feasible mandatory features are implemented and verified.
